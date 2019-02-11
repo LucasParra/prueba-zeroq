@@ -1,0 +1,62 @@
+@import './../../variables.scss';
+:host {
+    display: block;
+    height: 100%;
+}
+.card {
+    border-radius: 0px;
+    border: none;
+    height: 100%;
+    background: transparent;
+}
+.card-body {
+    background: $secondColor;
+}
+.card-title {
+    font-weight: 700;
+    color: white;
+}
+.card-footer {
+    background: $green;
+    color: white;
+    text-align: left;
+}
+.info {
+    display: inline;
+    i {
+        vertical-align: sub;
+    }
+}
+.info-time {
+    float: right
+}
+.material-icons {
+    margin-right: 5px;
+}
+@media(max-width:1024px) and (min-width:768px), (max-width:425px) {
+    .card-footer {
+        padding: 3.3% 9.5% 3.3% 9.5%;
+    }
+}
+@media(max-width:1024px) and (min-width:768px) {
+    .card-footer {
+        font-size: 0.9rem;
+    }
+    .material-icons{
+        font-size: 1.1rem;
+    }
+}
+.second-footer p {
+    text-align: left;
+    margin-top: 4px;
+    color: $green!important;
+}
+.noActive .card-body {
+    background: #DEDEDE;
+}
+.noActive .card-footer {
+    background: #808080;
+}
+.noActive .card-title{
+    color: #808080;
+}

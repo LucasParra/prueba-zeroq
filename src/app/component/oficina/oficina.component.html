@@ -1,0 +1,18 @@
+<div
+class="card text-center"
+[class.noActive]="!dataSource.online">
+  <div class="card-body">
+    <h5 class="card-title">{{dataSource.name}}</h5>
+  </div>
+  <div class="card-footer">
+    <div class="info-line info">
+        <i class="material-icons">person_outline</i> <span>{{totalFila}}</span>
+    </div>
+    <div class="info-time info">
+      <i class="material-icons">query_builder</i> <span>{{promedioAtencion}}</span>
+    </div>
+  </div>
+  <div class="second-footer">
+    <p>Oficina {{dataSource.online ? 'Conectada' : 'Desconectada'}}</p>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="search-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><i class="material-icons">search</i></div>
+          </div>
+          <input type="text" [(ngModel)]="searchText" name="searchText" (input)="search()" class="form-control" placeholder="Buscar Sucursal">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container oficinas">
+  <div class="row row-eq-heigh" *ngFor="let oficinasArray of oficinas; let firstRow = first">
+    <ng-container *ngFor="let oficina of oficinasArray; let firstCol = first" >
+        <div
+        class="col-md-3"
+        *ngIf="oficina.active"
+        [class.marginTopCol]="firstRow && firstCol">
+          <app-oficina [dataSource]="oficina"></app-oficina>
+        </div>
+    </ng-container>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+@import './../../variables.scss';
+:host {
+    background: #1A2A4D;
+    display: block;
+}
+.container.oficinas {
+    padding-top: 6vh;
+}
+.col-md-3 {
+    margin-top : 30px;
+}
+@media (max-width: 425px) {
+    .marginTopCol {
+        margin-top : 0px;
+    }
+}
+.search-container {
+    width: 100%;
+    display: block;
+    background-color: $secondColor;
+}
+.input-group {
+    padding: 2vh 0vh 2vh 0vh;
+}
+.input-group input,
+.input-group .input-group-text {
+    background-color: #ECEBEB;
+    border: none;
+}
+.input-group  input {
+    padding-left: 0px;
+}

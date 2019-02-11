@@ -1,0 +1,9 @@
+@import './../../variables.scss';
+
+:host {
+    background-color: $mainBackground;
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding: 6vh 0px 6vh 0px;
+}
