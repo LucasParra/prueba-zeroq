@@ -1,6 +1,6 @@
 # Instrucciónes:
 
-Para la correcta ejecución del software deve correr los siguientes comandos:
+Para la correcta ejecución del software debe correr los siguientes comandos:
 
 `npm install`
 `ng serve`
