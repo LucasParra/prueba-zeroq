@@ -7,4 +7,4 @@ Para la correcta ejecución del software deve correr los siguientes comandos:
 
 Se abrirá una nueva pestaña en el puerto 4200 (por predeterminado) donde se podrá ver el trabajo funcionando
 
-Saludos!# prueba-zeroq
+Saludos!
